@@ -10,6 +10,7 @@ third_response = requests.put("https://playground.learnqa.ru/ajax/api/compare_qu
 four_response = requests.delete("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
 
 
+print("Запрос POST")
 print(first_response.text)
 print(second_response.text)
 print(third_response.text)
@@ -23,6 +24,7 @@ if method != {"method": "GET"}:
     third_response = requests.put("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
     four_response = requests.delete("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
 
+    print("Запрос GET")
     print(first_response.text)
     print(second_response.text)
     print(third_response.text)
@@ -36,6 +38,7 @@ if method != {"method": "PUT"}:
     third_response = requests.put("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
     four_response = requests.delete("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
 
+    print("Запрос PUT")
     print(first_response.text)
     print(second_response.text)
     print(third_response.text)
@@ -49,6 +52,7 @@ if method != {"method": "delete"}:
     third_response = requests.put("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
     four_response = requests.delete("https://playground.learnqa.ru/ajax/api/compare_query_type", data=method)
 
+    print("Запрос DELETE")
     print(first_response.text)
     print(second_response.text)
     print(third_response.text)
