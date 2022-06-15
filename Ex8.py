@@ -5,7 +5,7 @@ import time
 url = "https://playground.learnqa.ru/ajax/api/longtime_job"
 method1 = requests.get("https://playground.learnqa.ru/ajax/api/longtime_job")
 
-method = json.loads(method1.text)
+#method = json.loads(method1.text)
 
 method_response_text = method1.json()
 token_my = method_response_text["token"]
